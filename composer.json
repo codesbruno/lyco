@@ -1,0 +1,19 @@
+{
+    "name": "brunoa/lyco",
+    "description": "Lyco personal PHP Framework",
+    "type": "library",
+    "license": "Personal",
+    "authors": [
+        {
+            "name": "Bruno A",
+            "email": "codes.bruno@gmail.com",
+            "role": "Founder and project lead"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {"lyco\\": ""}
+    }
+}
