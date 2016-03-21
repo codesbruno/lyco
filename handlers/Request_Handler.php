@@ -51,6 +51,8 @@ class Request_Handler
 
     private function get_array_var($array, $key, $default, $fromJson) 
     {
+        if(null == $key) { return $array; }
+      
         $data = \lyco\helpers\Array_Helper::get_array_var($array, $key, $default);
 
         if(!$fromJson) { return $data ? $data : $default; }        
