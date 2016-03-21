@@ -19,12 +19,12 @@ class Lyco
     public static $url;
        
  
-    public function __construct($autoloader) {
+    public function __construct($autoloader, $debug) {
         //$loader->add('Acme\\Test\\', __DIR__);
         // exception handler
 
         static::$request = new handlers\Request_Handler($_SERVER, $_POST, $_GET);
-        static::$uri     = new handlers\Url_Handler(static::$request);
+        static::$url     = new handlers\Url_Handler(static::$request);
 
 
 
