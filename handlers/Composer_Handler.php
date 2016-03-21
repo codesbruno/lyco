@@ -5,7 +5,8 @@ use Composer\Script\Event;
 
 class Composer_Handler
 {
-    public static function postInstall(Event $event)
+//    public static function postInstall(Event $event)
+    public static function postInstall()
     {
         $dir  = __DIR__ .'/../../../web/';
         $file = $dir.'/index.php';
